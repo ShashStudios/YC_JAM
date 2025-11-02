@@ -1,0 +1,110 @@
+{
+  "required_fields": {
+    "provider": ["npi", "name", "taxonomy"],
+    "patient": ["first_name", "last_name", "date_of_birth", "gender"],
+    "claim": ["service_date", "place_of_service"],
+    "billing": ["diagnosis_codes", "procedure_codes"]
+  },
+  "modifier_25_rule": {
+    "description": "Modifier 25 required when E/M service and minor procedure performed on same day",
+    "trigger_codes": {
+      "em_codes": ["99211", "99212", "99213", "99214", "99215", "99203", "99204"],
+      "minor_procedures": [
+        "17000", "17003", "17004",
+        "11200", "11201",
+        "12001", "12002",
+        "20610",
+        "96372"
+      ]
+    },
+    "required_modifier": "25",
+    "applies_to": "em_codes",
+    "cms_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+  },
+  "prior_authorization_watchlist": {
+    "description": "CPT codes that typically require prior authorization",
+    "codes": [
+      {
+        "code": "70553",
+        "description": "MRI brain with and without contrast",
+        "reason": "Advanced imaging requires PA"
+      },
+      {
+        "code": "70551",
+        "description": "MRI brain without contrast",
+        "reason": "Advanced imaging requires PA"
+      },
+      {
+        "code": "70552",
+        "description": "MRI brain with contrast",
+        "reason": "Advanced imaging requires PA"
+      },
+      {
+        "code": "29881",
+        "description": "Knee arthroscopy with meniscectomy",
+        "reason": "Surgical procedure requires PA"
+      },
+      {
+        "code": "43239",
+        "description": "EGD with biopsy",
+        "reason": "Endoscopic procedure may require PA"
+      },
+      {
+        "code": "45380",
+        "description": "Colonoscopy with biopsy",
+        "reason": "Endoscopic procedure may require PA"
+      }
+    ],
+    "required_field": "prior_authorization_number"
+  },
+  "place_of_service_codes": {
+    "11": "Office",
+    "21": "Inpatient Hospital",
+    "22": "Outpatient Hospital",
+    "23": "Emergency Room",
+    "31": "Skilled Nursing Facility",
+    "32": "Nursing Facility",
+    "81": "Independent Laboratory",
+    "99": "Other"
+  },
+  "validation_severity": {
+    "missing_required_field": "error",
+    "ncci_conflict": "error",
+    "missing_modifier_25": "error",
+    "missing_prior_auth": "error",
+    "invalid_code": "error",
+    "missing_supporting_documentation": "warning",
+    "unusual_units": "warning"
+  },
+  "default_values": {
+    "provider": {
+      "npi": "1234567890",
+      "name": "Dr. John Smith",
+      "taxonomy": "207R00000X",
+      "address": "123 Medical Center Dr",
+      "city": "Healthcare City",
+      "state": "CA",
+      "zip": "90210"
+    },
+    "prior_authorization": {
+      "number": "PA123456789",
+      "date": "2024-01-01"
+    }
+  },
+  "payer_rules": {
+    "medicare": {
+      "requires_modifier_25": true,
+      "strict_ncci": true,
+      "max_units_per_day": {
+        "17003": 13,
+        "11201": 10
+      }
+    },
+    "commercial": {
+      "requires_modifier_25": true,
+      "strict_ncci": false,
+      "allows_global_period_exceptions": true
+    }
+  }
+}
+

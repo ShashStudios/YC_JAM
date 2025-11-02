@@ -1,0 +1,48 @@
+{
+  "name": "claimsense",
+  "version": "1.0.0",
+  "description": "AI Billing Employee - Healthcare billing assistant with AI-powered claim validation",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "mcp": "tsx agent/server.ts",
+    "mcp:metorial": "tsx agent/server-metorial.ts",
+    "test:metorial": "tsx scripts/test-metorial.ts",
+    "test:auto": "tsx scripts/test-auto-processing.ts"
+  },
+  "dependencies": {
+    "@metorial/mcp-server-sdk": "^1.0.2",
+    "@metorial/openai": "^1.0.2",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@radix-ui/react-label": "^2.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "autoprefixer": "^10.4.20",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "formidable": "^3.5.1",
+    "metorial": "^1.0.3",
+    "next": "^15.1.4",
+    "openai": "^4.77.3",
+    "pdf-lib": "^1.17.1",
+    "postcss": "^8.4.49",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.2",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "^15.5.6",
+    "tsx": "^4.20.6"
+  }
+}

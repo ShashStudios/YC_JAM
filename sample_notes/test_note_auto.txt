@@ -1,0 +1,44 @@
+Patient: Sarah Johnson
+DOB: 05/15/1985
+Visit Date: 11/02/2025
+
+Chief Complaint: Annual physical examination
+
+History of Present Illness:
+Patient presents for her annual wellness visit. She reports feeling well overall with no acute complaints. She has been maintaining a healthy lifestyle with regular exercise and balanced diet.
+
+Past Medical History:
+- Hypertension, well controlled on medication
+- Hyperlipidemia
+
+Current Medications:
+- Lisinopril 10mg daily
+- Atorvastatin 20mg daily
+
+Vital Signs:
+- BP: 122/78 mmHg
+- Pulse: 72 bpm
+- Weight: 145 lbs
+- Height: 5'6"
+- BMI: 23.4
+
+Physical Examination:
+General: Well-appearing, in no acute distress
+Cardiovascular: Regular rate and rhythm, no murmurs
+Respiratory: Clear to auscultation bilaterally
+Abdomen: Soft, non-tender, non-distended
+
+Assessment and Plan:
+1. Annual wellness visit - comprehensive physical examination completed
+2. Hypertension - well controlled, continue current medication
+3. Hyperlipidemia - continue statin therapy
+4. Health maintenance counseling provided regarding diet, exercise, and preventive care
+
+Plan:
+- Continue current medications
+- Follow-up in 1 year for next annual visit
+- Labs ordered: lipid panel, comprehensive metabolic panel
+
+Physician: Dr. Michael Chen, MD
+NPI: 1234567890
+

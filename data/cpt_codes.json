@@ -1,0 +1,249 @@
+[
+  {
+    "code": "99213",
+    "description": "Office or other outpatient visit for evaluation and management, established patient, moderate complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "established patient", "evaluation", "management", "follow up"]
+  },
+  {
+    "code": "99214",
+    "description": "Office or other outpatient visit for evaluation and management, established patient, high complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "established patient", "complex", "evaluation", "management"]
+  },
+  {
+    "code": "99215",
+    "description": "Office or other outpatient visit for evaluation and management, established patient, very high complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "established patient", "very complex", "evaluation", "management"]
+  },
+  {
+    "code": "99203",
+    "description": "Office or other outpatient visit for evaluation and management, new patient, moderate complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "new patient", "evaluation", "management"]
+  },
+  {
+    "code": "99204",
+    "description": "Office or other outpatient visit for evaluation and management, new patient, high complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "new patient", "complex", "evaluation", "management"]
+  },
+  {
+    "code": "17000",
+    "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, first lesion",
+    "category": "Surgery",
+    "keywords": ["cryotherapy", "lesion", "destruction", "first lesion", "actinic keratosis", "cryosurgery"]
+  },
+  {
+    "code": "17003",
+    "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, second through 14th lesion",
+    "category": "Surgery",
+    "keywords": ["cryotherapy", "lesion", "destruction", "additional lesions", "multiple lesions"]
+  },
+  {
+    "code": "17004",
+    "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, 15 or more lesions",
+    "category": "Surgery",
+    "keywords": ["cryotherapy", "lesion", "destruction", "many lesions", "15 or more"]
+  },
+  {
+    "code": "11200",
+    "description": "Removal of skin tags, multiple fibrocutaneous tags, any area, up to and including 15 lesions",
+    "category": "Surgery",
+    "keywords": ["skin tag", "removal", "fibrocutaneous", "tag removal"]
+  },
+  {
+    "code": "11201",
+    "description": "Removal of skin tags, each additional 10 lesions",
+    "category": "Surgery",
+    "keywords": ["skin tag", "removal", "additional", "tag removal"]
+  },
+  {
+    "code": "70553",
+    "description": "Magnetic resonance imaging, brain, without and with contrast material",
+    "category": "Radiology",
+    "keywords": ["MRI", "brain", "imaging", "contrast", "magnetic resonance"]
+  },
+  {
+    "code": "70551",
+    "description": "Magnetic resonance imaging, brain, without contrast material",
+    "category": "Radiology",
+    "keywords": ["MRI", "brain", "imaging", "no contrast", "magnetic resonance"]
+  },
+  {
+    "code": "70552",
+    "description": "Magnetic resonance imaging, brain, with contrast material",
+    "category": "Radiology",
+    "keywords": ["MRI", "brain", "imaging", "with contrast", "magnetic resonance"]
+  },
+  {
+    "code": "71045",
+    "description": "Radiologic examination, chest, single view",
+    "category": "Radiology",
+    "keywords": ["chest x-ray", "x-ray", "radiograph", "chest", "single view"]
+  },
+  {
+    "code": "71046",
+    "description": "Radiologic examination, chest, 2 views",
+    "category": "Radiology",
+    "keywords": ["chest x-ray", "x-ray", "radiograph", "chest", "two views"]
+  },
+  {
+    "code": "80053",
+    "description": "Comprehensive metabolic panel",
+    "category": "Laboratory",
+    "keywords": ["blood test", "metabolic panel", "lab", "comprehensive", "CMP"]
+  },
+  {
+    "code": "80061",
+    "description": "Lipid panel",
+    "category": "Laboratory",
+    "keywords": ["cholesterol", "lipid", "blood test", "lab", "lipid panel"]
+  },
+  {
+    "code": "85025",
+    "description": "Blood count; complete (CBC), automated and automated differential WBC count",
+    "category": "Laboratory",
+    "keywords": ["CBC", "complete blood count", "blood test", "lab", "automated"]
+  },
+  {
+    "code": "93000",
+    "description": "Electrocardiogram, routine ECG with at least 12 leads; with interpretation and report",
+    "category": "Diagnostic",
+    "keywords": ["ECG", "EKG", "electrocardiogram", "heart", "12 lead"]
+  },
+  {
+    "code": "93005",
+    "description": "Electrocardiogram, routine ECG with at least 12 leads; tracing only, without interpretation and report",
+    "category": "Diagnostic",
+    "keywords": ["ECG", "EKG", "electrocardiogram", "heart", "tracing only"]
+  },
+  {
+    "code": "12001",
+    "description": "Simple repair of superficial wounds of scalp, neck, axillae, external genitalia, trunk and/or extremities; 2.5 cm or less",
+    "category": "Surgery",
+    "keywords": ["suture", "laceration", "wound repair", "simple repair", "superficial"]
+  },
+  {
+    "code": "12002",
+    "description": "Simple repair of superficial wounds; 2.6 cm to 7.5 cm",
+    "category": "Surgery",
+    "keywords": ["suture", "laceration", "wound repair", "simple repair"]
+  },
+  {
+    "code": "20610",
+    "description": "Arthrocentesis, aspiration and/or injection, major joint or bursa; without ultrasound guidance",
+    "category": "Surgery",
+    "keywords": ["joint injection", "arthrocentesis", "aspiration", "injection", "knee", "shoulder"]
+  },
+  {
+    "code": "96372",
+    "description": "Therapeutic, prophylactic, or diagnostic injection; subcutaneous or intramuscular",
+    "category": "Medicine",
+    "keywords": ["injection", "subcutaneous", "intramuscular", "IM", "subq"]
+  },
+  {
+    "code": "90834",
+    "description": "Psychotherapy, 45 minutes with patient",
+    "category": "Mental Health",
+    "keywords": ["therapy", "psychotherapy", "counseling", "mental health", "45 minutes"]
+  },
+  {
+    "code": "90837",
+    "description": "Psychotherapy, 60 minutes with patient",
+    "category": "Mental Health",
+    "keywords": ["therapy", "psychotherapy", "counseling", "mental health", "60 minutes", "hour"]
+  },
+  {
+    "code": "J3490",
+    "description": "Unclassified drugs",
+    "category": "Drug",
+    "keywords": ["drug", "medication", "unclassified"]
+  },
+  {
+    "code": "J1885",
+    "description": "Injection, ketorolac tromethamine, per 15 mg",
+    "category": "Drug",
+    "keywords": ["ketorolac", "toradol", "injection", "pain medication"]
+  },
+  {
+    "code": "J2001",
+    "description": "Injection, lidocaine HCl for intravenous infusion, 10 mg",
+    "category": "Drug",
+    "keywords": ["lidocaine", "injection", "anesthetic", "local anesthetic"]
+  },
+  {
+    "code": "29881",
+    "description": "Arthroscopy, knee, surgical; with meniscectomy",
+    "category": "Surgery",
+    "keywords": ["arthroscopy", "knee", "meniscus", "meniscectomy", "surgical"]
+  },
+  {
+    "code": "43239",
+    "description": "Esophagogastroduodenoscopy, flexible, transoral; with biopsy",
+    "category": "Surgery",
+    "keywords": ["EGD", "endoscopy", "upper endoscopy", "biopsy", "esophagus"]
+  },
+  {
+    "code": "45378",
+    "description": "Colonoscopy, flexible; diagnostic, including collection of specimen(s) by brushing or washing, when performed",
+    "category": "Surgery",
+    "keywords": ["colonoscopy", "diagnostic", "colon", "endoscopy"]
+  },
+  {
+    "code": "45380",
+    "description": "Colonoscopy, flexible; with biopsy, single or multiple",
+    "category": "Surgery",
+    "keywords": ["colonoscopy", "biopsy", "colon", "endoscopy"]
+  },
+  {
+    "code": "36415",
+    "description": "Collection of venous blood by venipuncture",
+    "category": "Laboratory",
+    "keywords": ["blood draw", "venipuncture", "phlebotomy", "blood collection"]
+  },
+  {
+    "code": "99211",
+    "description": "Office or other outpatient visit for evaluation and management, established patient, minimal complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "established patient", "minimal", "nurse visit"]
+  },
+  {
+    "code": "99212",
+    "description": "Office or other outpatient visit for evaluation and management, established patient, low complexity",
+    "category": "E/M",
+    "keywords": ["office visit", "established patient", "straightforward", "simple"]
+  },
+  {
+    "code": "G0438",
+    "description": "Annual wellness visit; includes a personalized prevention plan of service (PPS), initial visit",
+    "category": "Preventive",
+    "keywords": ["annual wellness", "preventive", "medicare", "wellness visit", "initial"]
+  },
+  {
+    "code": "G0439",
+    "description": "Annual wellness visit; includes a personalized prevention plan of service (PPS), subsequent visit",
+    "category": "Preventive",
+    "keywords": ["annual wellness", "preventive", "medicare", "wellness visit", "subsequent"]
+  },
+  {
+    "code": "96127",
+    "description": "Brief emotional/behavioral assessment",
+    "category": "Mental Health",
+    "keywords": ["screening", "behavioral assessment", "depression screening", "PHQ", "assessment"]
+  },
+  {
+    "code": "99495",
+    "description": "Transitional care management services with moderate medical decision complexity",
+    "category": "Care Management",
+    "keywords": ["transitional care", "post-discharge", "care management", "moderate complexity"]
+  },
+  {
+    "code": "99496",
+    "description": "Transitional care management services with high medical decision complexity",
+    "category": "Care Management",
+    "keywords": ["transitional care", "post-discharge", "care management", "high complexity"]
+  }
+]
+

@@ -1,0 +1,253 @@
+[
+  {
+    "code": "L57.0",
+    "description": "Actinic keratosis",
+    "keywords": ["actinic keratosis", "solar keratosis", "pre-cancerous lesion", "sun damage"]
+  },
+  {
+    "code": "E11.9",
+    "description": "Type 2 diabetes mellitus without complications",
+    "keywords": ["diabetes", "type 2 diabetes", "DM", "T2DM", "diabetes mellitus"]
+  },
+  {
+    "code": "E11.65",
+    "description": "Type 2 diabetes mellitus with hyperglycemia",
+    "keywords": ["diabetes", "hyperglycemia", "high blood sugar", "elevated glucose"]
+  },
+  {
+    "code": "I10",
+    "description": "Essential (primary) hypertension",
+    "keywords": ["hypertension", "high blood pressure", "HTN", "elevated BP"]
+  },
+  {
+    "code": "E78.5",
+    "description": "Hyperlipidemia, unspecified",
+    "keywords": ["hyperlipidemia", "high cholesterol", "dyslipidemia", "elevated lipids"]
+  },
+  {
+    "code": "E78.0",
+    "description": "Pure hypercholesterolemia",
+    "keywords": ["hypercholesterolemia", "high cholesterol", "elevated cholesterol"]
+  },
+  {
+    "code": "J44.9",
+    "description": "Chronic obstructive pulmonary disease, unspecified",
+    "keywords": ["COPD", "chronic obstructive pulmonary disease", "emphysema", "chronic bronchitis"]
+  },
+  {
+    "code": "J45.909",
+    "description": "Unspecified asthma, uncomplicated",
+    "keywords": ["asthma", "reactive airway", "wheezing"]
+  },
+  {
+    "code": "M79.3",
+    "description": "Panniculitis, unspecified",
+    "keywords": ["panniculitis", "inflammation", "subcutaneous"]
+  },
+  {
+    "code": "M79.604",
+    "description": "Pain in right leg",
+    "keywords": ["leg pain", "right leg", "lower extremity pain"]
+  },
+  {
+    "code": "M25.561",
+    "description": "Pain in right knee",
+    "keywords": ["knee pain", "right knee", "joint pain"]
+  },
+  {
+    "code": "M25.562",
+    "description": "Pain in left knee",
+    "keywords": ["knee pain", "left knee", "joint pain"]
+  },
+  {
+    "code": "R10.9",
+    "description": "Unspecified abdominal pain",
+    "keywords": ["abdominal pain", "stomach pain", "belly pain"]
+  },
+  {
+    "code": "R51.9",
+    "description": "Headache, unspecified",
+    "keywords": ["headache", "cephalgia", "head pain"]
+  },
+  {
+    "code": "R07.9",
+    "description": "Chest pain, unspecified",
+    "keywords": ["chest pain", "thoracic pain", "chest discomfort"]
+  },
+  {
+    "code": "F41.9",
+    "description": "Anxiety disorder, unspecified",
+    "keywords": ["anxiety", "anxiety disorder", "nervousness", "worry"]
+  },
+  {
+    "code": "F32.9",
+    "description": "Major depressive disorder, single episode, unspecified",
+    "keywords": ["depression", "depressive disorder", "MDD", "major depression"]
+  },
+  {
+    "code": "F33.1",
+    "description": "Major depressive disorder, recurrent, moderate",
+    "keywords": ["recurrent depression", "chronic depression", "MDD recurrent"]
+  },
+  {
+    "code": "Z00.00",
+    "description": "Encounter for general adult medical examination without abnormal findings",
+    "keywords": ["annual exam", "physical", "wellness visit", "checkup", "preventive"]
+  },
+  {
+    "code": "Z23",
+    "description": "Encounter for immunization",
+    "keywords": ["immunization", "vaccination", "vaccine", "shot"]
+  },
+  {
+    "code": "Z79.4",
+    "description": "Long term (current) use of insulin",
+    "keywords": ["insulin", "diabetes management", "long term insulin"]
+  },
+  {
+    "code": "G89.29",
+    "description": "Other chronic pain",
+    "keywords": ["chronic pain", "persistent pain", "long term pain"]
+  },
+  {
+    "code": "S01.01XA",
+    "description": "Laceration without foreign body of scalp, initial encounter",
+    "keywords": ["laceration", "scalp laceration", "head wound", "cut"]
+  },
+  {
+    "code": "S61.419A",
+    "description": "Laceration without foreign body of unspecified hand, initial encounter",
+    "keywords": ["hand laceration", "hand wound", "hand cut"]
+  },
+  {
+    "code": "L82.1",
+    "description": "Other seborrheic keratosis",
+    "keywords": ["seborrheic keratosis", "benign lesion", "age spot"]
+  },
+  {
+    "code": "D22.9",
+    "description": "Melanocytic nevi, unspecified",
+    "keywords": ["mole", "nevus", "nevi", "pigmented lesion"]
+  },
+  {
+    "code": "L91.0",
+    "description": "Keloid scar",
+    "keywords": ["keloid", "scar", "hypertrophic scar"]
+  },
+  {
+    "code": "R06.02",
+    "description": "Shortness of breath",
+    "keywords": ["shortness of breath", "dyspnea", "SOB", "breathing difficulty"]
+  },
+  {
+    "code": "R50.9",
+    "description": "Fever, unspecified",
+    "keywords": ["fever", "pyrexia", "elevated temperature"]
+  },
+  {
+    "code": "N39.0",
+    "description": "Urinary tract infection, site not specified",
+    "keywords": ["UTI", "urinary tract infection", "bladder infection"]
+  },
+  {
+    "code": "J06.9",
+    "description": "Acute upper respiratory infection, unspecified",
+    "keywords": ["upper respiratory infection", "URI", "cold", "common cold"]
+  },
+  {
+    "code": "J02.9",
+    "description": "Acute pharyngitis, unspecified",
+    "keywords": ["pharyngitis", "sore throat", "throat infection"]
+  },
+  {
+    "code": "K21.9",
+    "description": "Gastro-esophageal reflux disease without esophagitis",
+    "keywords": ["GERD", "reflux", "heartburn", "acid reflux"]
+  },
+  {
+    "code": "K59.00",
+    "description": "Constipation, unspecified",
+    "keywords": ["constipation", "irregular bowel", "difficulty defecating"]
+  },
+  {
+    "code": "R19.7",
+    "description": "Diarrhea, unspecified",
+    "keywords": ["diarrhea", "loose stools", "frequent bowel movements"]
+  },
+  {
+    "code": "G43.909",
+    "description": "Migraine, unspecified, not intractable, without status migrainosus",
+    "keywords": ["migraine", "migraine headache", "severe headache"]
+  },
+  {
+    "code": "M54.5",
+    "description": "Low back pain",
+    "keywords": ["low back pain", "lower back pain", "LBP", "lumbar pain"]
+  },
+  {
+    "code": "M79.1",
+    "description": "Myalgia",
+    "keywords": ["muscle pain", "myalgia", "muscle ache"]
+  },
+  {
+    "code": "R53.83",
+    "description": "Other fatigue",
+    "keywords": ["fatigue", "tiredness", "exhaustion", "lethargy"]
+  },
+  {
+    "code": "Z51.89",
+    "description": "Encounter for other specified aftercare",
+    "keywords": ["follow up", "aftercare", "post-procedure care"]
+  },
+  {
+    "code": "G47.00",
+    "description": "Insomnia, unspecified",
+    "keywords": ["insomnia", "sleep disorder", "difficulty sleeping"]
+  },
+  {
+    "code": "E66.9",
+    "description": "Obesity, unspecified",
+    "keywords": ["obesity", "overweight", "excessive weight"]
+  },
+  {
+    "code": "Z13.220",
+    "description": "Encounter for screening for lipoid disorders",
+    "keywords": ["cholesterol screening", "lipid screening", "preventive screening"]
+  },
+  {
+    "code": "I25.10",
+    "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+    "keywords": ["coronary artery disease", "CAD", "atherosclerosis", "heart disease"]
+  },
+  {
+    "code": "I48.91",
+    "description": "Unspecified atrial fibrillation",
+    "keywords": ["atrial fibrillation", "AFib", "irregular heartbeat", "arrhythmia"]
+  },
+  {
+    "code": "I50.9",
+    "description": "Heart failure, unspecified",
+    "keywords": ["heart failure", "CHF", "congestive heart failure", "cardiac failure"]
+  },
+  {
+    "code": "G89.11",
+    "description": "Acute pain due to trauma",
+    "keywords": ["acute pain", "trauma pain", "injury pain"]
+  },
+  {
+    "code": "R60.9",
+    "description": "Edema, unspecified",
+    "keywords": ["edema", "swelling", "fluid retention"]
+  },
+  {
+    "code": "R63.4",
+    "description": "Abnormal weight loss",
+    "keywords": ["weight loss", "unintentional weight loss", "losing weight"]
+  },
+  {
+    "code": "N18.3",
+    "description": "Chronic kidney disease, stage 3 (moderate)",
+    "keywords": ["chronic kidney disease", "CKD", "renal disease", "kidney disease"]
+  }
+]
+

@@ -1,0 +1,120 @@
+[
+  {
+    "id": "case1",
+    "name": "E/M + Minor Procedure Without Modifier 25",
+    "description": "Established patient visit with cryotherapy, missing modifier 25",
+    "clinician_note": "Patient: Jane Doe, DOB 03/15/1975. Established patient presented for follow-up of actinic keratosis on forehead. Discussed treatment options. Patient elected cryotherapy. Performed cryotherapy to single lesion on forehead. Tolerated well. Return PRN.",
+    "expected_issue": "Missing modifier 25 on E/M code when billed with minor procedure",
+    "expected_fix": "Add modifier 25 to CPT 99213",
+    "expected_outcome": "Approved",
+    "initial_claim": {
+      "patient": {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "date_of_birth": "1975-03-15",
+        "gender": "F"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. Sarah Johnson",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-15",
+      "place_of_service": "11",
+      "diagnosis_codes": ["L57.0"],
+      "procedures": [
+        {
+          "code": "99213",
+          "description": "Office visit, established patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 150.00
+        },
+        {
+          "code": "17000",
+          "description": "Cryotherapy, first lesion",
+          "modifiers": [],
+          "units": 1,
+          "charge": 120.00
+        }
+      ]
+    }
+  },
+  {
+    "id": "case2",
+    "name": "Missing Provider NPI",
+    "description": "Valid claim but missing required NPI number",
+    "clinician_note": "Patient: Robert Smith, DOB 07/22/1960. New patient presenting with right knee pain for 3 months. Examined knee, ordered x-rays. Discussed treatment plan including physical therapy and NSAIDs. Follow up in 4 weeks.",
+    "expected_issue": "Missing provider NPI (required field)",
+    "expected_fix": "Add valid NPI from defaults",
+    "expected_outcome": "Approved",
+    "initial_claim": {
+      "patient": {
+        "first_name": "Robert",
+        "last_name": "Smith",
+        "date_of_birth": "1960-07-22",
+        "gender": "M"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. Michael Chen",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-20",
+      "place_of_service": "11",
+      "diagnosis_codes": ["M25.561"],
+      "procedures": [
+        {
+          "code": "99204",
+          "description": "Office visit, new patient, high complexity",
+          "modifiers": [],
+          "units": 1,
+          "charge": 275.00
+        }
+      ]
+    }
+  },
+  {
+    "id": "case3",
+    "name": "MRI Without Prior Authorization",
+    "description": "MRI brain ordered but missing required prior authorization",
+    "clinician_note": "Patient: Emily Johnson, DOB 11/08/1982. Patient with persistent headaches and visual disturbances. Neurological exam unremarkable. Ordered MRI brain with and without contrast to rule out intracranial pathology. Patient educated on procedure and follow-up plan.",
+    "expected_issue": "MRI requires prior authorization which is missing",
+    "expected_fix": "Add prior authorization number",
+    "expected_outcome": "Approved",
+    "initial_claim": {
+      "patient": {
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "date_of_birth": "1982-11-08",
+        "gender": "F"
+      },
+      "provider": {
+        "npi": "1234567890",
+        "name": "Dr. Lisa Martinez",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-25",
+      "place_of_service": "11",
+      "diagnosis_codes": ["R51.9", "G43.909"],
+      "procedures": [
+        {
+          "code": "99214",
+          "description": "Office visit, established patient, high complexity",
+          "modifiers": [],
+          "units": 1,
+          "charge": 200.00
+        },
+        {
+          "code": "70553",
+          "description": "MRI brain with and without contrast",
+          "modifiers": [],
+          "units": 1,
+          "charge": 1250.00,
+          "prior_authorization_number": ""
+        }
+      ]
+    }
+  }
+]
+

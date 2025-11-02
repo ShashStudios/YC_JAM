@@ -1,0 +1,123 @@
+[
+  {
+    "column1": "11200",
+    "column2": "17000",
+    "description": "Skin tag removal conflicts with lesion destruction",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "12001",
+    "column2": "12002",
+    "description": "Different sizes of simple repair cannot be billed together",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "93000",
+    "column2": "93005",
+    "description": "Complete ECG conflicts with tracing only",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "70551",
+    "column2": "70552",
+    "description": "MRI without contrast conflicts with MRI with contrast (use 70553 for both)",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "45378",
+    "column2": "45380",
+    "description": "Diagnostic colonoscopy included in colonoscopy with biopsy",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "43239",
+    "column2": "43235",
+    "description": "EGD with biopsy includes diagnostic EGD",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "99213",
+    "column2": "99214",
+    "description": "Cannot bill different levels of E/M for same visit",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "17000",
+    "column2": "17003",
+    "description": "First lesion and additional lesion codes must be used correctly",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "36415",
+    "column2": "80053",
+    "description": "Venipuncture typically bundled with lab tests",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "96372",
+    "column2": "99213",
+    "description": "Injection may be bundled with E/M visit unless separately identifiable",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "20610",
+    "column2": "99213",
+    "description": "Joint injection may be bundled with E/M visit unless separately identifiable",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "12001",
+    "column2": "99213",
+    "description": "Simple repair may be bundled with E/M unless significant and separately identifiable",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "96127",
+    "column2": "99213",
+    "description": "Screening typically bundled with E/M",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "71045",
+    "column2": "71046",
+    "description": "Cannot bill both single and two-view chest x-ray",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "90834",
+    "column2": "90837",
+    "description": "Cannot bill different lengths of psychotherapy for same session",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "G0438",
+    "column2": "G0439",
+    "description": "Cannot bill both initial and subsequent annual wellness visit",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "99495",
+    "column2": "99496",
+    "description": "Cannot bill different levels of transitional care management",
+    "modifier_allowed": false
+  },
+  {
+    "column1": "85025",
+    "column2": "36415",
+    "description": "Venipuncture bundled with CBC",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "80061",
+    "column2": "36415",
+    "description": "Venipuncture bundled with lipid panel",
+    "modifier_allowed": true
+  },
+  {
+    "column1": "J2001",
+    "column2": "12001",
+    "description": "Lidocaine administration included in laceration repair",
+    "modifier_allowed": false
+  }
+]
+

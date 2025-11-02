@@ -1,0 +1,38 @@
+Patient: John Smith, DOB 05/12/1968, MRN: 12345678
+
+Chief Complaint: Follow-up for diabetes management and right knee pain
+
+HPI: This 57-year-old established patient presents today for routine diabetes follow-up and evaluation of right knee pain that started 2 weeks ago. Patient reports good glucose control at home with readings between 110-140 mg/dL. No episodes of hypoglycemia. Knee pain is described as aching, worse with stairs and prolonged standing. No trauma or injury recalled. Patient has been taking ibuprofen with minimal relief.
+
+Past Medical History:
+- Type 2 Diabetes Mellitus (diagnosed 2015)
+- Hypertension
+- Hyperlipidemia
+
+Medications:
+- Metformin 1000mg twice daily
+- Lisinopril 10mg daily
+- Atorvastatin 20mg daily
+
+Physical Examination:
+- BP: 132/84, HR: 76, Wt: 195 lbs
+- General: Alert and oriented, no acute distress
+- Right knee: Mild effusion, tenderness to palpation over medial joint line, full range of motion with pain at extremes, negative drawer test
+
+Assessment and Plan:
+1. Type 2 Diabetes Mellitus - Well controlled. Continue current medications. Ordered HbA1c and comprehensive metabolic panel. Follow up in 3 months.
+
+2. Right knee pain - Likely osteoarthritis versus meniscal pathology. Discussed conservative management including physical therapy and NSAIDs. Ordered right knee x-ray 2 views to evaluate for degenerative changes. If no improvement in 4-6 weeks, may consider MRI for further evaluation. Patient educated on weight loss benefits for knee pain.
+
+3. Hypertension - Stable on current regimen.
+
+4. Hyperlipidemia - Continue statin, ordered lipid panel.
+
+Total visit time: 35 minutes with high complexity medical decision making given multiple chronic conditions and new presenting problem.
+
+Return to clinic in 2 weeks to review labs and x-ray results.
+
+Dr. Sarah Johnson, MD
+NPI: 1234567890
+Date: November 1, 2025
+

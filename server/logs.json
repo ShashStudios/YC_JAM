@@ -1,0 +1,1563 @@
+[
+  {
+    "id": "log_1762059992450_tlo98tjrm",
+    "timestamp": "2025-11-02T05:06:32.450Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "lesion_count": null,
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c and comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "physical therapy"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "Type 2 Diabetes Mellitus",
+        "Hypertension",
+        "Hyperlipidemia"
+      ]
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060079343_8xxk714q1",
+    "timestamp": "2025-11-02T05:07:59.343Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "follow-up for diabetes management",
+      "diagnosis_text": "Type 2 Diabetes Mellitus",
+      "body_site": "right knee",
+      "lesion_count": null,
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "physical therapy",
+        "NSAIDs",
+        "lipid panel order"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "hypertension",
+        "hyperlipidemia"
+      ]
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060186118_3qlvc5cu6",
+    "timestamp": "2025-11-02T05:09:46.118Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "lesion_count": null,
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "physical therapy"
+      ],
+      "additional_diagnoses": [
+        "Type 2 Diabetes Mellitus",
+        "hypertension",
+        "hyperlipidemia",
+        "right knee pain",
+        "osteoarthritis",
+        "meniscal pathology"
+      ]
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060186181_ljzmepmnn",
+    "timestamp": "2025-11-02T05:09:46.181Z",
+    "action": "Mapped entities to CPT/ICD codes",
+    "details": {
+      "cpt_codes": [
+        {
+          "code": "99213",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, moderate complexity",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "office visit"
+        },
+        {
+          "code": "99214",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, high complexity",
+          "confidence": 0.9,
+          "source": "exact",
+          "matched_term": "visit complexity: high complexity"
+        },
+        {
+          "code": "99215",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, very high complexity",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "office visit"
+        },
+        {
+          "code": "80053",
+          "description": "Comprehensive metabolic panel",
+          "confidence": 0.5142857142857142,
+          "source": "keyword",
+          "matched_term": "metabolic panel"
+        },
+        {
+          "code": "71045",
+          "description": "Radiologic examination, chest, single view",
+          "confidence": 0.25,
+          "source": "keyword",
+          "matched_term": "x-ray"
+        },
+        {
+          "code": "71046",
+          "description": "Radiologic examination, chest, 2 views",
+          "confidence": 0.25,
+          "source": "keyword",
+          "matched_term": "x-ray"
+        },
+        {
+          "code": "90834",
+          "description": "Psychotherapy, 45 minutes with patient",
+          "confidence": 0.525,
+          "source": "keyword",
+          "matched_term": "therapy"
+        },
+        {
+          "code": "90837",
+          "description": "Psychotherapy, 60 minutes with patient",
+          "confidence": 0.525,
+          "source": "keyword",
+          "matched_term": "therapy"
+        }
+      ],
+      "icd_codes": [
+        {
+          "code": "Z79.4",
+          "description": "Long term (current) use of insulin",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "diabetes management"
+        },
+        {
+          "code": "E11.9",
+          "description": "Type 2 diabetes mellitus without complications",
+          "confidence": 0.39999999999999997,
+          "source": "keyword",
+          "matched_term": "diabetes"
+        },
+        {
+          "code": "E11.65",
+          "description": "Type 2 diabetes mellitus with hyperglycemia",
+          "confidence": 0.39999999999999997,
+          "source": "keyword",
+          "matched_term": "diabetes"
+        },
+        {
+          "code": "I10",
+          "description": "Essential (primary) hypertension",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "hypertension"
+        },
+        {
+          "code": "E78.5",
+          "description": "Hyperlipidemia, unspecified",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "hyperlipidemia"
+        },
+        {
+          "code": "M25.561",
+          "description": "Pain in right knee",
+          "confidence": 0.72,
+          "source": "keyword",
+          "matched_term": "knee pain"
+        },
+        {
+          "code": "M25.562",
+          "description": "Pain in left knee",
+          "confidence": 0.72,
+          "source": "keyword",
+          "matched_term": "knee pain"
+        }
+      ],
+      "entities": {
+        "procedure_name": "office visit",
+        "diagnosis_text": "diabetes management",
+        "body_site": "right knee",
+        "lesion_count": null,
+        "visit_complexity": "high complexity",
+        "additional_procedures": [
+          "HbA1c order",
+          "comprehensive metabolic panel order",
+          "right knee x-ray 2 views",
+          "physical therapy"
+        ],
+        "additional_diagnoses": [
+          "Type 2 Diabetes Mellitus",
+          "hypertension",
+          "hyperlipidemia",
+          "right knee pain",
+          "osteoarthritis",
+          "meniscal pathology"
+        ],
+        "patient_type": "established"
+      }
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060186243_17gzwy0zw",
+    "timestamp": "2025-11-02T05:09:46.243Z",
+    "action": "Built initial claim",
+    "details": {
+      "patient": {
+        "first_name": "",
+        "last_name": "",
+        "date_of_birth": "",
+        "gender": "U"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. John Smith",
+        "taxonomy": "207R00000X",
+        "address": "123 Medical Center Dr",
+        "city": "Healthcare City",
+        "state": "CA",
+        "zip": "90210"
+      },
+      "service_date": "2025-11-02",
+      "place_of_service": "11",
+      "diagnosis_codes": [
+        "Z79.4",
+        "I10",
+        "E78.5",
+        "M25.561",
+        "M25.562"
+      ],
+      "procedures": [
+        {
+          "code": "99213",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, moderate complexity",
+          "modifiers": [],
+          "units": 1,
+          "charge": 160
+        },
+        {
+          "code": "99214",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, high complexity",
+          "modifiers": [],
+          "units": 1,
+          "charge": 190
+        },
+        {
+          "code": "99215",
+          "description": "Office or other outpatient visit for evaluation and management, established patient, very high complexity",
+          "modifiers": [],
+          "units": 1,
+          "charge": 220
+        },
+        {
+          "code": "80053",
+          "description": "Comprehensive metabolic panel",
+          "modifiers": [],
+          "units": 1,
+          "charge": 75
+        },
+        {
+          "code": "90834",
+          "description": "Psychotherapy, 45 minutes with patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 100
+        },
+        {
+          "code": "90837",
+          "description": "Psychotherapy, 60 minutes with patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 100
+        }
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060186312_9hckjf764",
+    "timestamp": "2025-11-02T05:09:46.312Z",
+    "action": "Validated claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060186307_nadozbbu7",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060186307_sp8269opk",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: first_name",
+          "field": "patient.first_name",
+          "suggested_fix": "Add patient first_name"
+        },
+        {
+          "id": "issue_1762060186307_cheu5nhsw",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: last_name",
+          "field": "patient.last_name",
+          "suggested_fix": "Add patient last_name"
+        },
+        {
+          "id": "issue_1762060186307_dvlvhe5fh",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: date_of_birth",
+          "field": "patient.date_of_birth",
+          "suggested_fix": "Add patient date_of_birth"
+        },
+        {
+          "id": "issue_1762060186307_ldm9i01l4",
+          "severity": "error",
+          "code": "NCCI_CONFLICT",
+          "message": "NCCI conflict: Cannot bill different levels of E/M for same visit",
+          "affected_codes": [
+            "99213",
+            "99214"
+          ],
+          "suggested_fix": "Remove one of the conflicting codes",
+          "rule_reference": "NCCI Edit Table"
+        },
+        {
+          "id": "issue_1762060186307_8mpt51a79",
+          "severity": "error",
+          "code": "NCCI_CONFLICT",
+          "message": "NCCI conflict: Cannot bill different lengths of psychotherapy for same session",
+          "affected_codes": [
+            "90834",
+            "90837"
+          ],
+          "suggested_fix": "Remove one of the conflicting codes",
+          "rule_reference": "NCCI Edit Table"
+        }
+      ],
+      "timestamp": "2025-11-02T05:09:46.307Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060191676_qk4gyoer6",
+    "timestamp": "2025-11-02T05:09:51.676Z",
+    "action": "AI fixed claim issues",
+    "details": {
+      "original_claim": {
+        "patient": {
+          "first_name": "",
+          "last_name": "",
+          "date_of_birth": "",
+          "gender": "U"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. John Smith",
+          "taxonomy": "207R00000X",
+          "address": "123 Medical Center Dr",
+          "city": "Healthcare City",
+          "state": "CA",
+          "zip": "90210"
+        },
+        "service_date": "2025-11-02",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "Z79.4",
+          "I10",
+          "E78.5",
+          "M25.561",
+          "M25.562"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, moderate complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 160
+          },
+          {
+            "code": "99214",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, high complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 190
+          },
+          {
+            "code": "99215",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, very high complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 220
+          },
+          {
+            "code": "80053",
+            "description": "Comprehensive metabolic panel",
+            "modifiers": [],
+            "units": 1,
+            "charge": 75
+          },
+          {
+            "code": "90834",
+            "description": "Psychotherapy, 45 minutes with patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 100
+          },
+          {
+            "code": "90837",
+            "description": "Psychotherapy, 60 minutes with patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 100
+          }
+        ]
+      },
+      "fixed_claim": {
+        "patient": {
+          "first_name": "",
+          "last_name": "",
+          "date_of_birth": "",
+          "gender": "U"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. John Smith",
+          "taxonomy": "207R00000X",
+          "address": "123 Medical Center Dr",
+          "city": "Healthcare City",
+          "state": "CA",
+          "zip": "90210"
+        },
+        "service_date": "2025-11-02",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "Z79.4",
+          "I10",
+          "E78.5",
+          "M25.561",
+          "M25.562"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, moderate complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 160
+          },
+          {
+            "code": "99214",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, high complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 190
+          },
+          {
+            "code": "99215",
+            "description": "Office or other outpatient visit for evaluation and management, established patient, very high complexity",
+            "modifiers": [],
+            "units": 1,
+            "charge": 220
+          },
+          {
+            "code": "80053",
+            "description": "Comprehensive metabolic panel",
+            "modifiers": [],
+            "units": 1,
+            "charge": 75
+          },
+          {
+            "code": "90834",
+            "description": "Psychotherapy, 45 minutes with patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 100
+          },
+          {
+            "code": "90837",
+            "description": "Psychotherapy, 60 minutes with patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 100
+          }
+        ]
+      },
+      "fixes_applied": [],
+      "timestamp": "2025-11-02T05:09:51.660Z"
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060191702_3mlz2y1u3",
+    "timestamp": "2025-11-02T05:09:51.702Z",
+    "action": "Re-validated fixed claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060191695_bcjofxfu2",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060191695_fctidfvqa",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: first_name",
+          "field": "patient.first_name",
+          "suggested_fix": "Add patient first_name"
+        },
+        {
+          "id": "issue_1762060191695_84vq46od7",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: last_name",
+          "field": "patient.last_name",
+          "suggested_fix": "Add patient last_name"
+        },
+        {
+          "id": "issue_1762060191695_1cxhlfvp5",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required patient field: date_of_birth",
+          "field": "patient.date_of_birth",
+          "suggested_fix": "Add patient date_of_birth"
+        },
+        {
+          "id": "issue_1762060191695_xvxsdajmx",
+          "severity": "error",
+          "code": "NCCI_CONFLICT",
+          "message": "NCCI conflict: Cannot bill different levels of E/M for same visit",
+          "affected_codes": [
+            "99213",
+            "99214"
+          ],
+          "suggested_fix": "Remove one of the conflicting codes",
+          "rule_reference": "NCCI Edit Table"
+        },
+        {
+          "id": "issue_1762060191695_86dc1isoa",
+          "severity": "error",
+          "code": "NCCI_CONFLICT",
+          "message": "NCCI conflict: Cannot bill different lengths of psychotherapy for same session",
+          "affected_codes": [
+            "90834",
+            "90837"
+          ],
+          "suggested_fix": "Remove one of the conflicting codes",
+          "rule_reference": "NCCI Edit Table"
+        }
+      ],
+      "timestamp": "2025-11-02T05:09:51.696Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060191771_z9i4sz3z8",
+    "timestamp": "2025-11-02T05:09:51.771Z",
+    "action": "Submitted claim to payer",
+    "claim_id": "CLM-MHH955HY-QY94MNU",
+    "details": {
+      "decision": "denied",
+      "claim_id": "CLM-MHH955HY-QY94MNU",
+      "timestamp": "2025-11-02T05:09:51.766Z",
+      "reason": "Claim has validation errors",
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD",
+        "MISSING_REQUIRED_FIELD",
+        "MISSING_REQUIRED_FIELD",
+        "MISSING_REQUIRED_FIELD",
+        "NCCI_CONFLICT",
+        "NCCI_CONFLICT"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060367292_qvscn3hpk",
+    "timestamp": "2025-11-02T05:12:47.292Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "cryotherapy",
+      "diagnosis_text": "actinic keratosis",
+      "body_site": "forehead",
+      "lesion_count": 1,
+      "visit_complexity": "moderate",
+      "patient_type": "established",
+      "additional_procedures": null,
+      "additional_diagnoses": null
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060367312_own3kadp6",
+    "timestamp": "2025-11-02T05:12:47.312Z",
+    "action": "Mapped entities to CPT/ICD codes",
+    "details": {
+      "cpt_codes": [
+        {
+          "code": "17000",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, first lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17003",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, second through 14th lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17004",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, 15 or more lesions",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        }
+      ],
+      "icd_codes": [
+        {
+          "code": "L57.0",
+          "description": "Actinic keratosis",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "actinic keratosis"
+        }
+      ],
+      "entities": {
+        "procedure_name": "cryotherapy",
+        "diagnosis_text": "actinic keratosis",
+        "body_site": "forehead",
+        "lesion_count": 1,
+        "visit_complexity": "moderate",
+        "additional_procedures": null,
+        "additional_diagnoses": null,
+        "patient_type": "established"
+      }
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060367329_hy8mik2r5",
+    "timestamp": "2025-11-02T05:12:47.329Z",
+    "action": "Built initial claim",
+    "details": {
+      "patient": {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "date_of_birth": "1975-03-15",
+        "gender": "F"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. Sarah Johnson",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-15",
+      "place_of_service": "11",
+      "diagnosis_codes": [
+        "L57.0"
+      ],
+      "procedures": [
+        {
+          "code": "99213",
+          "description": "Office visit, established patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 150
+        },
+        {
+          "code": "17000",
+          "description": "Cryotherapy, first lesion",
+          "modifiers": [],
+          "units": 1,
+          "charge": 120
+        }
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060367345_2y8wfvwgv",
+    "timestamp": "2025-11-02T05:12:47.345Z",
+    "action": "Validated claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060367340_sxxyn2moz",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060367341_gudbwig5v",
+          "severity": "error",
+          "code": "MISSING_MODIFIER_25",
+          "message": "Modifier 25 required on E/M code 99213 when billed with minor procedure",
+          "affected_codes": [
+            "99213"
+          ],
+          "suggested_fix": "Add modifier 25 to CPT 99213",
+          "rule_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+        }
+      ],
+      "timestamp": "2025-11-02T05:12:47.341Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060373307_kr19444qn",
+    "timestamp": "2025-11-02T05:12:53.307Z",
+    "action": "AI fixed claim issues",
+    "details": {
+      "original_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixed_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixes_applied": [],
+      "timestamp": "2025-11-02T05:12:53.300Z"
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060373317_0qy21r2h4",
+    "timestamp": "2025-11-02T05:12:53.317Z",
+    "action": "Re-validated fixed claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060373314_ormmucmxt",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060373314_yz8emmoc2",
+          "severity": "error",
+          "code": "MISSING_MODIFIER_25",
+          "message": "Modifier 25 required on E/M code 99213 when billed with minor procedure",
+          "affected_codes": [
+            "99213"
+          ],
+          "suggested_fix": "Add modifier 25 to CPT 99213",
+          "rule_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+        }
+      ],
+      "timestamp": "2025-11-02T05:12:53.314Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060373328_cuk4xirmi",
+    "timestamp": "2025-11-02T05:12:53.328Z",
+    "action": "Submitted claim to payer",
+    "claim_id": "CLM-MHH991L8-5G913NW",
+    "details": {
+      "decision": "denied",
+      "claim_id": "CLM-MHH991L8-5G913NW",
+      "timestamp": "2025-11-02T05:12:53.324Z",
+      "reason": "Claim has validation errors",
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD",
+        "MISSING_MODIFIER_25"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060741329_sgnpa07ay",
+    "timestamp": "2025-11-02T05:19:01.329Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "cryotherapy",
+      "diagnosis_text": "actinic keratosis",
+      "body_site": "forehead",
+      "lesion_count": 1,
+      "visit_complexity": "moderate",
+      "patient_type": "established",
+      "additional_procedures": null,
+      "additional_diagnoses": null
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060741406_dcv1kb0bz",
+    "timestamp": "2025-11-02T05:19:01.406Z",
+    "action": "Mapped entities to CPT/ICD codes",
+    "details": {
+      "cpt_codes": [
+        {
+          "code": "17000",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, first lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17003",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, second through 14th lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17004",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, 15 or more lesions",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        }
+      ],
+      "icd_codes": [
+        {
+          "code": "L57.0",
+          "description": "Actinic keratosis",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "actinic keratosis"
+        }
+      ],
+      "entities": {
+        "procedure_name": "cryotherapy",
+        "diagnosis_text": "actinic keratosis",
+        "body_site": "forehead",
+        "lesion_count": 1,
+        "visit_complexity": "moderate",
+        "additional_procedures": null,
+        "additional_diagnoses": null,
+        "patient_type": "established"
+      }
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060741488_dro51jfm8",
+    "timestamp": "2025-11-02T05:19:01.488Z",
+    "action": "Built initial claim",
+    "details": {
+      "patient": {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "date_of_birth": "1975-03-15",
+        "gender": "F"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. Sarah Johnson",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-15",
+      "place_of_service": "11",
+      "diagnosis_codes": [
+        "L57.0"
+      ],
+      "procedures": [
+        {
+          "code": "99213",
+          "description": "Office visit, established patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 150
+        },
+        {
+          "code": "17000",
+          "description": "Cryotherapy, first lesion",
+          "modifiers": [],
+          "units": 1,
+          "charge": 120
+        }
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060741544_h6o9hscle",
+    "timestamp": "2025-11-02T05:19:01.544Z",
+    "action": "Validated claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060741540_mquq2i2nn",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060741540_34xh94fkx",
+          "severity": "error",
+          "code": "MISSING_MODIFIER_25",
+          "message": "Modifier 25 required on E/M code 99213 when billed with minor procedure",
+          "affected_codes": [
+            "99213"
+          ],
+          "suggested_fix": "Add modifier 25 to CPT 99213",
+          "rule_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+        }
+      ],
+      "timestamp": "2025-11-02T05:19:01.540Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060746241_8dl9vetxy",
+    "timestamp": "2025-11-02T05:19:06.241Z",
+    "action": "AI fixed claim issues",
+    "details": {
+      "original_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixed_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixes_applied": [],
+      "timestamp": "2025-11-02T05:19:06.218Z"
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060746259_2iasogrzb",
+    "timestamp": "2025-11-02T05:19:06.259Z",
+    "action": "Re-validated fixed claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060746253_os0wq3eg9",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060746254_sq999bylq",
+          "severity": "error",
+          "code": "MISSING_MODIFIER_25",
+          "message": "Modifier 25 required on E/M code 99213 when billed with minor procedure",
+          "affected_codes": [
+            "99213"
+          ],
+          "suggested_fix": "Add modifier 25 to CPT 99213",
+          "rule_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+        }
+      ],
+      "timestamp": "2025-11-02T05:19:06.254Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060746367_cp62kfzjs",
+    "timestamp": "2025-11-02T05:19:06.367Z",
+    "action": "Submitted claim to payer",
+    "claim_id": "CLM-MHH9H1FE-X3AAMGK",
+    "details": {
+      "decision": "denied",
+      "claim_id": "CLM-MHH9H1FE-X3AAMGK",
+      "timestamp": "2025-11-02T05:19:06.362Z",
+      "reason": "Claim has validation errors",
+      "reason_codes": [
+        "MISSING_REQUIRED_FIELD",
+        "MISSING_MODIFIER_25"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060851830_h61vpxq4m",
+    "timestamp": "2025-11-02T05:20:51.830Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "cryotherapy",
+      "diagnosis_text": "actinic keratosis",
+      "body_site": "forehead",
+      "lesion_count": 1,
+      "visit_complexity": "moderate",
+      "patient_type": "established",
+      "additional_procedures": null,
+      "additional_diagnoses": null
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060851890_3uonykggu",
+    "timestamp": "2025-11-02T05:20:51.890Z",
+    "action": "Mapped entities to CPT/ICD codes",
+    "details": {
+      "cpt_codes": [
+        {
+          "code": "17000",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, first lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17003",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, second through 14th lesion",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        },
+        {
+          "code": "17004",
+          "description": "Destruction (eg, laser surgery, electrosurgery, cryosurgery) premalignant lesions, 15 or more lesions",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "cryotherapy"
+        }
+      ],
+      "icd_codes": [
+        {
+          "code": "L57.0",
+          "description": "Actinic keratosis",
+          "confidence": 0.99,
+          "source": "keyword",
+          "matched_term": "actinic keratosis"
+        }
+      ],
+      "entities": {
+        "procedure_name": "cryotherapy",
+        "diagnosis_text": "actinic keratosis",
+        "body_site": "forehead",
+        "lesion_count": 1,
+        "visit_complexity": "moderate",
+        "additional_procedures": null,
+        "additional_diagnoses": null,
+        "patient_type": "established"
+      }
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060851979_16e3pr13f",
+    "timestamp": "2025-11-02T05:20:51.979Z",
+    "action": "Built initial claim",
+    "details": {
+      "patient": {
+        "first_name": "Jane",
+        "last_name": "Doe",
+        "date_of_birth": "1975-03-15",
+        "gender": "F"
+      },
+      "provider": {
+        "npi": "",
+        "name": "Dr. Sarah Johnson",
+        "taxonomy": "207R00000X"
+      },
+      "service_date": "2024-01-15",
+      "place_of_service": "11",
+      "diagnosis_codes": [
+        "L57.0"
+      ],
+      "procedures": [
+        {
+          "code": "99213",
+          "description": "Office visit, established patient",
+          "modifiers": [],
+          "units": 1,
+          "charge": 150
+        },
+        {
+          "code": "17000",
+          "description": "Cryotherapy, first lesion",
+          "modifiers": [],
+          "units": 1,
+          "charge": 120
+        }
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060852033_mw52l3y44",
+    "timestamp": "2025-11-02T05:20:52.033Z",
+    "action": "Validated claim",
+    "details": {
+      "valid": false,
+      "issues": [
+        {
+          "id": "issue_1762060852027_dxmeq0mvg",
+          "severity": "error",
+          "code": "MISSING_REQUIRED_FIELD",
+          "message": "Missing required provider field: npi",
+          "field": "provider.npi",
+          "suggested_fix": "Add provider npi"
+        },
+        {
+          "id": "issue_1762060852027_byqccorof",
+          "severity": "error",
+          "code": "MISSING_MODIFIER_25",
+          "message": "Modifier 25 required on E/M code 99213 when billed with minor procedure",
+          "affected_codes": [
+            "99213"
+          ],
+          "suggested_fix": "Add modifier 25 to CPT 99213",
+          "rule_reference": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1"
+        }
+      ],
+      "timestamp": "2025-11-02T05:20:52.027Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060862925_bssre4sgb",
+    "timestamp": "2025-11-02T05:21:02.925Z",
+    "action": "AI fixed claim issues",
+    "details": {
+      "original_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixed_claim": {
+        "patient": {
+          "first_name": "Jane",
+          "last_name": "Doe",
+          "date_of_birth": "1975-03-15",
+          "gender": "F"
+        },
+        "provider": {
+          "npi": "1234567890",
+          "name": "Dr. Sarah Johnson",
+          "taxonomy": "207R00000X"
+        },
+        "service_date": "2024-01-15",
+        "place_of_service": "11",
+        "diagnosis_codes": [
+          "L57.0"
+        ],
+        "procedures": [
+          {
+            "code": "99213",
+            "description": "Office visit, established patient",
+            "modifiers": [
+              "25"
+            ],
+            "units": 1,
+            "charge": 150
+          },
+          {
+            "code": "17000",
+            "description": "Cryotherapy, first lesion",
+            "modifiers": [],
+            "units": 1,
+            "charge": 120
+          }
+        ]
+      },
+      "fixes_applied": [
+        {
+          "issue_id": "issue_1762060852027_dxmeq0mvg",
+          "description": "Add missing provider NPI",
+          "patches": [
+            {
+              "op": "replace",
+              "path": "/provider/npi",
+              "value": "1234567890"
+            }
+          ],
+          "rule_citation": "CMS-1500 Claim Form Instructions - NPI is a required field for all providers",
+          "reasoning": "Provider NPI is mandatory per HIPAA transaction standards. Added the registered NPI for Dr. Sarah Johnson from the system defaults."
+        },
+        {
+          "issue_id": "issue_1762060852027_byqccorof",
+          "description": "Add modifier 25 to E/M code 99213",
+          "patches": [
+            {
+              "op": "add",
+              "path": "/procedures/0/modifiers/-",
+              "value": "25"
+            }
+          ],
+          "rule_citation": "CMS Medicare Claims Processing Manual, Chapter 12, Section 40.1 - Modifier 25 required when E/M service is significant and separately identifiable from procedure performed on same day",
+          "reasoning": "The claim includes both an E/M visit (99213) and a minor procedure (17000 - cryotherapy) on the same date. Per CMS guidelines, modifier 25 must be appended to the E/M code to indicate it was a separately identifiable service."
+        }
+      ],
+      "timestamp": "2025-11-02T05:21:02.910Z"
+    },
+    "actor": "ai"
+  },
+  {
+    "id": "log_1762060862942_1d4eoo340",
+    "timestamp": "2025-11-02T05:21:02.942Z",
+    "action": "Re-validated fixed claim",
+    "details": {
+      "valid": true,
+      "issues": [],
+      "timestamp": "2025-11-02T05:21:02.939Z"
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762060863007_ftslij53a",
+    "timestamp": "2025-11-02T05:21:03.007Z",
+    "action": "Submitted claim to payer",
+    "claim_id": "CLM-MHH9JJFC-B29JKCI",
+    "details": {
+      "decision": "approved",
+      "claim_id": "CLM-MHH9JJFC-B29JKCI",
+      "timestamp": "2025-11-02T05:21:03.001Z",
+      "reason": "Claim meets all requirements",
+      "amount_approved": 270
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762062343867_vqlkaxvil",
+    "timestamp": "2025-11-02T05:45:43.867Z",
+    "action": "Extracted entities from clinician note including diagnoses and procedures for diabetes management, right knee pain, hypertension, and hyperlipidemia, along with orders for HbA1c, comprehensive metabolic panel, right knee x-ray, and physical therapy.",
+    "details": {},
+    "actor": "system"
+  },
+  {
+    "id": "log_1762073264320_lacx20pzw",
+    "timestamp": "2025-11-02T08:47:44.320Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "lipid panel order"
+      ],
+      "additional_diagnoses": [
+        "Type 2 Diabetes Mellitus",
+        "hypertension",
+        "hyperlipidemia",
+        "right knee pain",
+        "likely osteoarthritis",
+        "possible meniscal pathology"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762082444393_nbhi1qsv9",
+    "timestamp": "2025-11-02T11:20:44.393Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "physical therapy",
+        "NSAIDs",
+        "right knee x-ray 2 views",
+        "lipid panel order"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "Type 2 Diabetes Mellitus",
+        "hypertension",
+        "hyperlipidemia"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762083388919_cdbinzako",
+    "timestamp": "2025-11-02T11:36:28.919Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "physical therapy"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "Type 2 Diabetes Mellitus",
+        "Hypertension",
+        "Hyperlipidemia"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762096452215_bg3h0vb59",
+    "timestamp": "2025-11-02T15:14:12.215Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "physical therapy",
+        "NSAIDs"
+      ],
+      "additional_diagnoses": [
+        "Type 2 Diabetes Mellitus",
+        "hypertension",
+        "hyperlipidemia",
+        "knee pain",
+        "osteoarthritis",
+        "meniscal pathology"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762098737660_g24odsys5",
+    "timestamp": "2025-11-02T15:52:17.660Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "lipid panel order"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "Type 2 Diabetes Mellitus",
+        "Hypertension",
+        "Hyperlipidemia"
+      ]
+    },
+    "actor": "system"
+  },
+  {
+    "id": "log_1762100560110_jkxuy4e6i",
+    "timestamp": "2025-11-02T16:22:40.110Z",
+    "action": "Extracted entities from clinician note",
+    "details": {
+      "procedure_name": "office visit",
+      "diagnosis_text": "diabetes management",
+      "body_site": "right knee",
+      "visit_complexity": "high complexity",
+      "patient_type": "established",
+      "additional_procedures": [
+        "HbA1c order",
+        "comprehensive metabolic panel order",
+        "right knee x-ray 2 views",
+        "lipid panel order"
+      ],
+      "additional_diagnoses": [
+        "right knee pain",
+        "Type 2 Diabetes Mellitus",
+        "Hypertension",
+        "Hyperlipidemia"
+      ]
+    },
+    "actor": "system"
+  }
+]
