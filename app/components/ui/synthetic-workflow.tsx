@@ -282,7 +282,8 @@ export function SyntheticWorkflow({ noteId, filename, onComplete }: SyntheticWor
         {/* Steps Visualization */}
         <div className="space-y-2">
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Agent Workflow Steps</p>
-          {steps.map((step, index) => {
+          {/* Progressive rendering: show steps up to current active step, then show all when complete */}
+          {steps.slice(0, isComplete ? steps.length : Math.max(1, currentStep)).map((step, index) => {
             const isActive = step.status === 'active';
             const isCompleted = step.status === 'completed';
             const isPending = step.status === 'pending';
