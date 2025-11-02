@@ -353,6 +353,12 @@ IMPORTANT:
 
   const handleUpload = async () => {
     if (!selectedFile) return;
+    
+    // Prevent duplicate uploads
+    if (isUploading) {
+      console.log('⚠️ Upload already in progress, ignoring duplicate click');
+      return;
+    }
 
     setIsUploading(true);
     setError('');
@@ -565,8 +571,14 @@ IMPORTANT:
 
           {selectedFile && (
             <button
-              onClick={handleUpload}
-              disabled={isUploading}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                if (!isUploading && selectedFile) {
+                  handleUpload();
+                }
+              }}
+              disabled={isUploading || !selectedFile}
               className="mt-4 w-full bg-blue-600 text-white py-3 px-6 rounded-xl hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed font-semibold transition-all duration-200 shadow hover:shadow-lg active:scale-[0.98]"
             >
               {isUploading ? 'Uploading...' : 'Upload and Process'}

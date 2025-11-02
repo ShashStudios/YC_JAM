@@ -103,22 +103,45 @@ export default async function handler(
     }
 
     // Read file content
-    const content = readFileSync(uploadedFile.filepath, 'utf-8');
+    let content: string;
+    try {
+      content = readFileSync(uploadedFile.filepath, 'utf-8');
+    } catch (readError: any) {
+      console.error('Failed to read uploaded file:', readError);
+      return res.status(500).json({
+        success: false,
+        error: {
+          code: 'FILE_READ_ERROR',
+          message: 'Failed to read uploaded file',
+        },
+        timestamp: new Date().toISOString(),
+      });
+    }
 
     // Create notes directory if it doesn't exist
     const notesDir = join(process.cwd(), 'public', 'notes');
-    if (!existsSync(notesDir)) {
-      mkdirSync(notesDir, { recursive: true });
+    try {
+      if (!existsSync(notesDir)) {
+        mkdirSync(notesDir, { recursive: true });
+      }
+    } catch (dirError: any) {
+      console.error('Failed to create notes directory:', dirError);
+      // Continue anyway - file saving is optional
     }
 
     // Generate unique ID
     const noteId = `NOTE-${Date.now().toString(36)}-${Math.random().toString(36).substring(2, 9)}`.toUpperCase();
     
-    // Save file to notes directory
-    const filename = uploadedFile.originalFilename;
-    const savedFilename = `${noteId}-${filename}`;
-    const savedPath = join(notesDir, savedFilename);
-    writeFileSync(savedPath, content);
+    // Save file to notes directory (optional - continue even if this fails)
+    const filename = uploadedFile.originalFilename || 'uploaded-note.txt';
+    try {
+      const savedFilename = `${noteId}-${filename}`;
+      const savedPath = join(notesDir, savedFilename);
+      writeFileSync(savedPath, content);
+    } catch (writeError: any) {
+      console.warn('Failed to save file to disk (continuing anyway):', writeError.message);
+      // Continue - we still have the content in memory
+    }
 
     // Create note record
     const note: Note = {
@@ -135,10 +158,19 @@ export default async function handler(
 
     // Trigger background processing (fire and forget)
     // This will be picked up by the processor
+    // Only if processor module exists (may not be available in all deployments)
     setImmediate(() => {
-      import('@/server/processor/claim-processor').then((module) => {
-        module.processNote(noteId);
-      });
+      import('@/server/processor/claim-processor')
+        .then((module) => {
+          if (module && module.processNote) {
+            module.processNote(noteId);
+          }
+        })
+        .catch((err) => {
+          // Silently ignore if processor module doesn't exist or fails
+          // This is expected in some deployment environments
+          console.log('Processor module not available (this is OK in production):', err.message);
+        });
     });
 
     return res.status(200).json({
@@ -148,12 +180,23 @@ export default async function handler(
     });
   } catch (error: any) {
     console.error('Error in notes/upload:', error);
+    console.error('Error stack:', error.stack);
+    
+    // Return more helpful error message
+    const errorMessage = error.message || 'Failed to upload file';
+    const isFileSystemError = error.code === 'ENOENT' || error.code === 'EACCES' || error.code === 'EMFILE';
+    const isFormidableError = error.message?.includes('formidable') || error.name === 'FormidableError';
+    
     return res.status(500).json({
       success: false,
       error: {
         code: 'UPLOAD_FAILED',
-        message: error.message || 'Failed to upload file',
-        details: error,
+        message: isFileSystemError 
+          ? 'File system error. Check server permissions.'
+          : isFormidableError
+          ? 'File parsing error. Please try a different file.'
+          : errorMessage,
+        details: process.env.NODE_ENV === 'development' ? error.toString() : undefined,
       },
       timestamp: new Date().toISOString(),
     });

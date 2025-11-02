@@ -11,6 +11,7 @@ import { Label } from '@/app/components/ui/label';
 import { Input } from '@/app/components/ui/input';
 import { AgentProcessor } from '@/app/components/ui/agent-processor';
 import { LoadingSpinner } from '@/app/components/ui/loading-spinner';
+import { AnimatedNumber } from '@/app/components/ui/animated-number';
 
 export default function Home() {
   const [selectedDemo, setSelectedDemo] = useState<string>('');
@@ -289,15 +290,25 @@ export default function Home() {
               {/* Key Stats */}
               <div className="grid grid-cols-3 gap-3 lg:gap-4 mb-6 max-w-3xl">
                 <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border-2 border-white/30 shadow-lg text-left">
-                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">15%</div>
+                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">
+                    <AnimatedNumber value={15} suffix="%" duration={1500} />
+                  </div>
                   <div className="text-blue-100 text-xs lg:text-sm font-medium">Claims denied</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border-2 border-white/30 shadow-lg text-left">
-                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">$20B+</div>
+                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">
+                    <AnimatedNumber 
+                      value={20} 
+                      duration={1800}
+                      formatter={(val) => `$${Math.round(val)}B+`}
+                    />
+                  </div>
                   <div className="text-blue-100 text-xs lg:text-sm font-medium">Lost annually</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-sm rounded-xl p-4 border-2 border-white/30 shadow-lg text-left">
-                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">50%</div>
+                  <div className="text-3xl lg:text-4xl font-bold mb-1 text-white">
+                    <AnimatedNumber value={50} suffix="%" duration={1500} />
+                  </div>
                   <div className="text-blue-100 text-xs lg:text-sm font-medium">Cost reduction</div>
                 </div>
               </div>
